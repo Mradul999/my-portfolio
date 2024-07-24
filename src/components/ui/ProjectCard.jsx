@@ -3,10 +3,10 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="w-full flex  gap-16 text-white items-center ">
+    <div className="w-full flex sm:flex-row flex-col  gap-16 text-white items-center ">
       <img
         src={project.image}
-        className="  w-[350px] h-[190px] rounded-lg card-img"
+        className="  w-[350px] h-[150px]  sm:h-[190px] rounded-lg card-img"
         alt=""
       />
       <div className="flex flex-col items-start gap-2">

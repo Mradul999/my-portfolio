@@ -21,7 +21,7 @@ export default function About() {
     };
   }, []);
   return (
-    <div id="about" className="w-full flex  flex-col gap-8 py-20  px-32">
+    <div id="about" className="w-full flex  flex-col gap-8   sm:px-32">
         <div className="flex flex-col gap-1 ">
         <h1 className="text-center text-white text-3xl font-semibold">
           About me
@@ -29,14 +29,14 @@ export default function About() {
         <p className="text-center text-gray-300 text-[12px]">My introduction </p>
       </div>
 
-      <div className="flex flex-row justify-between    gap-12">
-        <img ref={tiltRef} src="../src/assets/image.jpg" className="w-[320px] tilt-element rounded-md img-shadow " />
-        <div className="flex flex-col items-start gap-3 ">
+      <div className="flex sm:flex-row flex-col justify-between    sm:gap-12">
+        <img ref={tiltRef} src="../src/assets/image.jpg" className="w-[320px] self-center tilt-element rounded-md img-shadow " />
+        <div className="flex flex-col items-start gap-3 mx-3 sm:text-start text-center ">
           <p className="text-gray-300 text-[15px] mt-10">
             Hey there, I am Mradul a 21-year-old student who is currently
             pursuing Btech in CSE. I am passionate about Software Development and Product management
           </p>
-          <button className="py-2 text-white px-2 bg-indigo-700  text-sm font-medium rounded-md  hover:bg-indigo-800 transition-all flex items-center gap-1">Resume <TiDocumentText /></button>
+          <button className="py-2 text-white px-2 bg-indigo-700  text-sm font-medium rounded-md  hover:bg-indigo-800 transition-all flex items-center gap-1  sm:self-start self-center">Resume <TiDocumentText /></button>
         </div>
       </div>
       

@@ -17,7 +17,7 @@ export default function ContactMe() {
     e.target.reset();
   };
   return (
-    <div id="contactme" className="w-full  py-16 mt-10 flex flex-col   gap-20 ">
+    <div id="contactme" className=" py-8  sm:py-16 sm:mt-10 flex flex-col gap-10   sm:gap-20 ">
       <div className="flex flex-col  gap-2">
         <h1 className="text-center text-3xl font-semibold tracking-wide text-white">
           Contact Me
@@ -27,9 +27,9 @@ export default function ContactMe() {
         </span>
       </div>
       
-      <form onSubmit={submitHandler} className="flex flex-col gap-3 mx-20">
+      <form onSubmit={submitHandler} className="flex flex-col gap-3 mx-2 sm:mx-20">
       {successMessage && <button className="text-sm bg-indigo-600 rounded-md  py-3 px-2 text-gray-200 font-medium">{successMessage}</button>}
-        <div className="flex gap-2">
+        <div className="flex sm:flex-row flex-col gap-2">
           <input required
             className=" text-gray-400 grow bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600 placeholder:font-medium   border-indigo-700 border-[2px] placeholder:text-sm plac"
             type="text"

@@ -11,7 +11,7 @@ import ProjectCard from "./ProjectCard.jsx";
 
 export function CarouselDemo() {
   return (
-    <Carousel className="w-full max-w-[75%] ">
+    <Carousel className=" mx-auto max-w-[95%] sm:max-w-[80%] sm:px-8  overflow-x-hidden  ">
       <CarouselContent >
         {projectData.map((project,index) => (
           <CarouselItem  key={index}>   

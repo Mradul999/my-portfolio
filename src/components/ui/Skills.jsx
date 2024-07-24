@@ -44,7 +44,7 @@ export default function Skills() {
         <span className="text-center text-[12px] text-gray-300">
           My Technical Skills
         </span>
-        <div className="flex px-24  justify-between text-white w-full mt-7">
+        <div className="flex px-4 sm:px-24 sm:flex-row flex-col gap-10  justify-between text-white w-full mt-7">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col  items-center">
               <div
@@ -143,7 +143,7 @@ export default function Skills() {
               <div className="flex items-center  gap-2">
                 <BiCodeCurly className="font-bold text-2xl text-indigo-600" />
                 <div className="flex flex-col">
-                  <h1 className="font-semibold tracking-wide">
+                  <h1 className="font-semibold flex tracking-wide">
                     Libraries and Frameworks
                   </h1>
                   <p className="text-gray-300 text-[12px]">

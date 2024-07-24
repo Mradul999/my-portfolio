@@ -3,8 +3,8 @@ import { SlCalender } from "react-icons/sl";
 
 export default function Qualification() {
   return (
-    <div id="qualifications" className="w-full py-16 mt-10 flex flex-col   gap-10 ">
-      <div className="flex flex-col  gap-2">
+    <div id="qualifications" className="w-full py-16 mt-10 flex flex-col     gap-10 ">
+      <div className="flex flex-col   gap-2">
         <h1 className="text-center text-3xl font-semibold tracking-wide text-white">
           Qualification
         </h1>
@@ -12,7 +12,7 @@ export default function Qualification() {
           My Educational Qualification 
         </span>
       </div>
-      <div className="flex justify-center gap-8 text-white ">
+      <div className="flex justify-center mx-6 gap-4  sm:gap-8 text-white ">
         <div className="flex flex-col gap-28">
           <div className="flex flex-col">
             <h1 className="text-[14px] font-semibold">B.Tech Information Technology</h1>
