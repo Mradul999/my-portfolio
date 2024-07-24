@@ -22,7 +22,7 @@ export default function About() {
   return (
     <div id="about" className="w-full flex  flex-col gap-8 py-20  px-32">
         <div className="flex flex-col gap-1 ">
-        <h1 className="text-center text-white text-2xl font-semibold">
+        <h1 className="text-center text-white text-3xl font-semibold">
           About me
         </h1>
         <p className="text-center text-gray-300 text-[12px]">My introduction </p>

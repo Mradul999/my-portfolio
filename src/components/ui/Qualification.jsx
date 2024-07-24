@@ -5,7 +5,7 @@ export default function Qualification() {
   return (
     <div id="qualifications" className="w-full py-16 mt-10 flex flex-col   gap-10 ">
       <div className="flex flex-col  gap-2">
-        <h1 className="text-center text-2xl font-semibold tracking-wide text-white">
+        <h1 className="text-center text-3xl font-semibold tracking-wide text-white">
           Qualification
         </h1>
         <span className="text-center text-[12px] text-gray-300">

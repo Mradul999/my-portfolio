@@ -4,6 +4,8 @@ import Home from "./components/ui/Home";
 import About from "./components/ui/About";
 import Skills from "./components/ui/Skills";
 import Qualification from "./components/ui/Qualification";
+import Projects from "./components/ui/Projects";
+import ContactMe from "./components/ui/ContactMe";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <About />
         <Skills />
         <Qualification />
+        <Projects/>
+        <ContactMe/>  
       </div>
     </div>
   );
