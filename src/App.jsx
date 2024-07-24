@@ -6,10 +6,11 @@ import Skills from "./components/ui/Skills";
 import Qualification from "./components/ui/Qualification";
 import Projects from "./components/ui/Projects";
 import ContactMe from "./components/ui/ContactMe";
+import Footer from "./components/ui/Footer";
 
 export default function App() {
   return (
-    <div className=" min-h-screen flex justify-center bg   ">
+    <div  className=" min-h-screen flex flex-col   items-center bg   ">
       <div className="max-w-[1000px] w-full ">
         <Navbar />
         <Home />
@@ -17,9 +18,10 @@ export default function App() {
         <About />
         <Skills />
         <Qualification />
-        <Projects/>
-        <ContactMe/>  
+        <Projects />
+        <ContactMe />
       </div>
+      <Footer />
     </div>
   );
 }

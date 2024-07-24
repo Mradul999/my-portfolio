@@ -2,6 +2,7 @@ import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { TiDocumentText } from "react-icons/ti";
 export default function About() {
     const tiltRef = useRef(null);
 
@@ -35,7 +36,7 @@ export default function About() {
             Hey there, I am Mradul a 21-year-old student who is currently
             pursuing Btech in CSE. I am passionate about Software Development and Product management
           </p>
-          <button className="py-2 text-white px-2 bg-indigo-700 rounded-md  hover:bg-indigo-800 transition-all">Resume</button>
+          <button className="py-2 text-white px-2 bg-indigo-700  text-sm font-medium rounded-md  hover:bg-indigo-800 transition-all flex items-center gap-1">Resume <TiDocumentText /></button>
         </div>
       </div>
       
