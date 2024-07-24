@@ -45,8 +45,12 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.instagram.com/catsaredramatic99/"><FaInstagram className="hover:text-indigo-800 transition-all" /></a>
-            
+            <a
+              target="_blank"
+              href="https://www.instagram.com/catsaredramatic99/"
+            >
+              <FaInstagram className="hover:text-indigo-800 transition-all" />
+            </a>
           </li>
         </ul>
 
@@ -54,7 +58,10 @@ export default function Home() {
           <h1 className="text-4xl font-semibold">Hi, I'm Mradul</h1>
           <h1 className="text-xl font-medium typing">I am a Web Developer</h1>
           <span className="py-2 px-1 flex items-center gap-1 font-medium text-[13px]  dark:text-white text-white hover:bg-indigo-800 transition-all rounded-md w-[45%] cursor-pointer justify-center mt-3 bg-indigo-600">
-            Contact Me <IoSend className="text-[12px]" />
+            {" "}
+            <a className="flex gap-2 items-center" href="#contactme">
+              Contact Me <IoSend className="text-[12px]" />
+            </a>
           </span>
         </div>
       </div>
