@@ -45,7 +45,8 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <FaInstagram className="hover:text-indigo-800 transition-all" />
+            <a target="_blank" href="https://www.instagram.com/catsaredramatic99/"><FaInstagram className="hover:text-indigo-800 transition-all" /></a>
+            
           </li>
         </ul>
 

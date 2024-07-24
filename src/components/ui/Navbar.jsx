@@ -47,7 +47,7 @@ export default function Navbar() {
             <a href="#contactme">Contact me</a>
           </li>
         </ul>
-        {theme === "dark" ? (
+      {theme === "dark" ? (
           <CiSun
             onClick={modeClickhandler}
             className=" text-white text-2xl cursor-pointer  sm:block hidden   "
