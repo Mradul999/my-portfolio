@@ -16,31 +16,32 @@ export default function Footer() {
       <ul className="flex gap-3 sm:flex-row flex-col text-sm font-medium">
         {" "}
         <li>
-          <a className="hover:text-indigo-800 transition-all" href="#about">
+          <a className="dark:hover:text-indigo-800 hover:text-violet-700  transition-all" href="#about">
             About
           </a>
         </li>
         <li>
-          <a className="hover:text-indigo-800 transition-all" href="#projects">
+          <a className="dark:hover:text-indigo-800 hover:text-violet-700  transition-all" href="#projects">
             Projects
           </a>
         </li>
         <li>
           {" "}
-          <a className="hover:text-indigo-800 transition-all" href="#contactme">
+          <a className="dark:hover:text-indigo-800 hover:text-violet-700  transition-all" href="#contactme">
             Contact Me
           </a>{" "}
         </li>
       </ul>
-      <ul className="flex gap-3 text-base font-semibold">
+      <ul className="flex gap-3 text-xl font-semibold">
         <li>
           {" "}
           <a target=" _blank" href="">
             <a
               target="_target"
               href="https://www.instagram.com/catsaredramatic99/"
-            ></a>
-            <IoLogoInstagram className="hover:text-indigo-800 transition-all" />
+            >
+              <IoLogoInstagram className="dark:hover:text-indigo-800 hover:text-violet-700  transition-all" />
+            </a>
           </a>
         </li>
         <li>
@@ -48,12 +49,12 @@ export default function Footer() {
             target="_blank"
             href="https://www.linkedin.com/in/mradul-verma-b74048254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           >
-            <FaLinkedinIn className="hover:text-indigo-800 transition-all" />
+            <FaLinkedinIn className="dark:hover:text-indigo-800 hover:text-violet-700  transition-all" />
           </a>
         </li>
         <li>
           <a target="_blank" href="https://github.com/Mradul999">
-            <AiFillGithub className="hover:text-indigo-800 transition-all" />
+            <AiFillGithub className="dark:hover:text-indigo-800 hover:text-violet-700  transition-all" />
           </a>
         </li>
       </ul>
