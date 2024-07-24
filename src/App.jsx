@@ -3,7 +3,7 @@ import Navbar from "./components/ui/Navbar";
 import Home from "./components/ui/Home";
 import About from "./components/ui/About";
 import Skills from "./components/ui/Skills";
-
+import Qualification from "./components/ui/Qualification";
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
 
         <About />
         <Skills />
-        
+        <Qualification />
       </div>
     </div>
   );

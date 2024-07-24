@@ -36,7 +36,7 @@ export default function Skills() {
     setIsVisible3(!isVisible3);
   };
   return (
-    <div className="w-full py-16 mt-10 ">
+    <div id="skills" className="w-full py-16 mt-10 ">
       <div className="flex flex-col  gap-2">
         <h1 className="text-center text-2xl font-semibold tracking-wide text-white">
           Skils
