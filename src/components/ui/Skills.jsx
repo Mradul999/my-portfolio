@@ -38,13 +38,13 @@ export default function Skills() {
   return (
     <div id="skills" className="w-full py-16 mt-10 ">
       <div className="flex flex-col  gap-2">
-        <h1 className="text-center text-3xl font-semibold tracking-wide text-white">
+        <h1 className="text-center text-3xl font-semibold tracking-wide text-gray-800 dark:text-white">
           Skils
         </h1>
-        <span className="text-center text-[12px] text-gray-300">
+        <span className="text-center text-[12px] text-gray-800 dark:text-gray-300">
           My Technical Skills
         </span>
-        <div className="flex px-4 sm:px-24 sm:flex-row flex-col gap-10  justify-between text-white w-full mt-7">
+        <div className="flex px-4 sm:px-24 sm:flex-row flex-col gap-10  justify-between text-gray-800 dark:text-white w-full mt-7">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col  items-center">
               <div
@@ -55,7 +55,7 @@ export default function Skills() {
                   <TbBracketsAngle className="font-bold text-2xl text-indigo-600" />
                   <div className="flex flex-col">
                     <h1 className="font-semibold tracking-wide">Languages</h1>
-                    <p className="text-gray-300 text-[12px]">
+                    <p className="dark:text-gray-300 text-gray-800 text-[12px]">
                       Languages that I have picked up over the years
                     </p>
                   </div>
@@ -97,7 +97,7 @@ export default function Skills() {
                   <FaTools className="font-bold text-2xl text-indigo-600" />
                   <div className="flex flex-col">
                     <h1 className="font-semibold tracking-wide"> Tools</h1>
-                    <p className="text-gray-300 text-[12px]">
+                    <p className="dark:text-gray-300 text-[12px]">
                       Tools that I know and use on a daily basis
                     </p>
                   </div>
@@ -146,7 +146,7 @@ export default function Skills() {
                   <h1 className="font-semibold flex tracking-wide">
                     Libraries and Frameworks
                   </h1>
-                  <p className="text-gray-300 text-[12px]">
+                  <p className="dark:text-gray-300 text-[12px]">
                     Libraries and Frameworks that I prefer to work with
                   </p>
                 </div>

@@ -21,10 +21,10 @@ export default function ContactMe() {
       className=" py-8  sm:py-16 sm:mt-10 flex flex-col gap-10   sm:gap-20 "
     >
       <div className="flex flex-col  gap-2">
-        <h1 className="text-center text-3xl font-semibold tracking-wide text-white">
+        <h1 className="text-center text-3xl font-semibold tracking-wide text-gray-800 dark:text-white">
           Contact Me
         </h1>
-        <span className="text-center text-xs text-gray-300">
+        <span className="text-center text-xs dark:text-gray-300">
           Feel free to connect with Me
         </span>
       </div>
@@ -41,13 +41,13 @@ export default function ContactMe() {
         <div className="flex sm:flex-row flex-col gap-2">
           <input
             required
-            className=" text-gray-400 grow bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600 placeholder:font-medium   border-indigo-700 border-[2px] placeholder:text-sm plac"
+            className=" placeholder:text-gray-700 placeholder:dark:text-gray-300 dark:text-gray-400 grow bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600 placeholder:font-medium   border-indigo-700 border-[2px] placeholder:text-sm plac"
             type="text"
             placeholder="Name"
           />
           <input
             required
-            className=" placeholder:font-medium  text-gray-400  grow bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600   border-indigo-700 border-[2px]  placeholder:text-sm"
+            className=" placeholder:font-medium placeholder:dark:text-gray-300 placeholder:text-gray-700 dark:text-gray-400  grow bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600   border-indigo-700 border-[2px]  placeholder:text-sm"
             type="email"
             placeholder="Email"
             name=""
@@ -57,7 +57,7 @@ export default function ContactMe() {
 
         <input
           required
-          className=" placeholder:font-medium text-gray-400   placeholder:text-sm bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600   border-indigo-700 border-[2px]"
+          className=" placeholder:font-medium placeholder:dark:text-gray-300 placeholder:text-gray-700 dark:text-gray-400   placeholder:text-sm bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600   border-indigo-700 border-[2px]"
           type="text"
           placeholder="Subject"
           name=""
@@ -67,11 +67,11 @@ export default function ContactMe() {
         <textarea
           required
           rows="6"
-          className=" placeholder:font-medium  text-gray-400  placeholder:text-sm bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600   border-indigo-700 border-[2px]"
+          className="placeholder:text-gray-700 placeholder:dark:text-gray-300  placeholder:font-medium  dark:text-gray-400  placeholder:text-sm bg-indigo-700 bg-opacity-20 px-2 pb-7 pt-1 rounded-md flex focus:outline-none focus:border-green-600   border-indigo-700 border-[2px]"
           type="text"
           placeholder="Message"
         />
-        <button className=" self-start text-xs text-white bg-indigo-700 py-3 px-3 flex items-center gap-2 rounded-md">
+        <button className=" self-start  text-xs text-white bg-indigo-700 py-3 px-3 flex items-center gap-2 rounded-md">
           Send Message <IoSend className="text-xs" />
         </button>
       </form>

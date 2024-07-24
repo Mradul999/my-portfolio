@@ -1,20 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CiSun } from "react-icons/ci";
-
+import { FaMoon } from "react-icons/fa6";
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const modeClickhandler = () => {
+    setTheme(theme === "dark" ? "Light" : "dark");
+  };
 
   const handleDropdown = () => {
     setDropdown(!dropdown);
   };
   return (
     <div className="flex flex-col">
-      <div className=" flex  justify-between         py-4 text-[14px] font-medium mx-2  z-10 bg">
-        <div className="text-white  cursor-pointer  hover:text-indigo-700    transition-all">
+      <div className=" flex  justify-between         py-4 text-[14px] font-medium mx-2  z-10 dark:bg-background-dark bg-background ">
+        <div className="text-gray-800 dark:text-white  cursor-pointer  hover:text-indigo-700    transition-all">
           Mradul
         </div>
-        <ul className=" gap-3 text-white sm:flex hidden text-sm  ">
+        <ul className=" gap-3 text-gray-800 dark:text-white sm:flex hidden text-sm  ">
           <li className="cursor-pointer hover:text-indigo-700  transition-all">
             <a href="#home">Home</a>
           </li>
@@ -34,31 +47,65 @@ export default function Navbar() {
             <a href="#contactme">Contact me</a>
           </li>
         </ul>
-        <CiSun className=" text-2xl text-white sm:block hidden   " />
+        {theme === "dark" ? (
+          <CiSun
+            onClick={modeClickhandler}
+            className=" text-white text-2xl cursor-pointer  sm:block hidden   "
+          />
+        ) : (
+          <FaMoon
+            onClick={modeClickhandler}
+            className=" text-2xl cursor-pointer text-gray-800  sm:block hidden"
+          />
+        )}
+
         <div className="flex sm:hidden gap-2">
-          <CiSun className=" text-2xl text-white    " />
+          {theme === "dark" ? (
+            <CiSun
+              onClick={modeClickhandler}
+              className=" text-white text-2xl cursor-pointer     "
+            />
+          ) : (
+            <FaMoon
+              onClick={modeClickhandler}
+              className=" text-2xl cursor-pointer text-gray-800  "
+            />
+          )}
 
           <RxHamburgerMenu
             onClick={handleDropdown}
-            className="text-white text-2xl "
+            className="dark:text-white text-gray-800 text-2xl "
           />
         </div>
       </div>
 
       <div
-        className={`text-white bg-indigo-500 p-2 transition-all duration-300 ${
+        className={`dark:text-white text-gray-800 bg-indigo-500 p-2 transition-all duration-300 ${
           dropdown ? " opacity-100 max-h-full" : "opacity-0 max-h-0"
         } `}
       >
         {" "}
-        <ul className="flex flex-col gap-3">
+        <ul className="flex flex-col gap-3 text-gray-200">
           {" "}
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li> <a href="#qualifications">Qualifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactme">Contact me</a></li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#qualifications">Qualifications</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contactme">Contact me</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -10,7 +10,9 @@ import Footer from "./components/ui/Footer";
 
 export default function App() {
   return (
-    <div  className=" min-h-screen flex flex-col   items-center bg   ">
+    <div
+      className={` min-h-screen flex flex-col    items-center dark:bg-background-dark bg-background   `}
+    >
       <div className="max-w-[1000px] w-full ">
         <Navbar />
         <Home />

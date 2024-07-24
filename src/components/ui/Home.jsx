@@ -49,10 +49,10 @@ export default function Home() {
           </li>
         </ul>
 
-        <div className="flex flex-col gap-2 mt-10 sm:mt-20">
+        <div className="flex flex-col gap-2 mt-10 sm:mt-20 dark:text-white text-gray-800">
           <h1 className="text-4xl font-semibold">Hi, I'm Mradul</h1>
           <h1 className="text-xl font-medium typing">I am a Web Developer</h1>
-          <span className="py-2 px-1 flex items-center gap-1 font-medium text-[13px] hover:bg-indigo-800 transition-all rounded-md w-[45%] cursor-pointer justify-center mt-3 bg-indigo-600">
+          <span className="py-2 px-1 flex items-center gap-1 font-medium text-[13px]  dark:text-white text-white hover:bg-indigo-800 transition-all rounded-md w-[45%] cursor-pointer justify-center mt-3 bg-indigo-600">
             Contact Me <IoSend className="text-[12px]" />
           </span>
         </div>

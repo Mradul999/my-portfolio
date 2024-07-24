@@ -5,7 +5,8 @@ import { AiFillGithub } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <div className=" sm:gap-0 gap-10 w-full py-16  sm:py-24 sm:px-36 px-2  flex sm:flex-row flex-col footer-bg  text-white    justify-around ">
+    <div className=" sm:gap-0 gap-10 w-full py-16  sm:py-24 sm:px-36 px-2  flex sm:flex-row flex-col   text-white dark:bg-footer-dark bg-indigo-800
+        justify-around ">
       <div className="flex flex-col sm:gap-0 gap-2">
         <h1 className="text-3xl font-semibold">Mradul Verma</h1>
         <span className="text-sm font-medium">Full Stack Developer</span>
