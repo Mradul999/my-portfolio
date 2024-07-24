@@ -24,10 +24,10 @@ export default function Home() {
   return (
     <div
       id="home"
-      className=" pr-20 text-white sm:pt-[9rem] pb-[8rem] sm:pb-[12rem] flex sm:flex-row flex-col justify-between px-5 sm:px-20 sm:gap-0 gap-4  "
+      className=" pr-20 text-white  sm:pt-[9rem] pb-[8rem] sm:pb-[12rem] flex sm:flex-row flex-col justify-between px-5 sm:px-20 sm:gap-0 gap-4  "
     >
       <div className="flex w-full gap-5  justify-between pr-36">
-        <ul className="flex flex-col gap-3 text-[20px]  text-indigo-700 font-semibold mt-[6.7rem]">
+        <ul className="flex flex-col gap-3 text-[20px]  text-indigo-700 font-semibold mt-[3rem] sm:mt-[6.7rem]">
           <li>
             {" "}
             <a
@@ -49,7 +49,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <div className="flex flex-col gap-2 mt-20">
+        <div className="flex flex-col gap-2 mt-10 sm:mt-20">
           <h1 className="text-4xl font-semibold">Hi, I'm Mradul</h1>
           <h1 className="text-xl font-medium typing">I am a Web Developer</h1>
           <span className="py-2 px-1 flex items-center gap-1 font-medium text-[13px] hover:bg-indigo-800 transition-all rounded-md w-[45%] cursor-pointer justify-center mt-3 bg-indigo-600">
