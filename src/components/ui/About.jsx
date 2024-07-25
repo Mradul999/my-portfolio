@@ -21,7 +21,7 @@ export default function About() {
     };
   }, []);
   return (
-    <div id="about" className="flex  flex-col  gap-8   ">
+    <div id="about" className="flex  flex-col  gap-8    ">
       <div className="flex flex-col gap-1 ">
         <h1 className="text-center text-gray-800 dark:text-white text-3xl font-semibold">
           About me
@@ -31,17 +31,12 @@ export default function About() {
         </p>
       </div>
 
-      <div className="flex sm:flex-row flex-col  sm:px-16 overflow-x-hidden       sm:gap-12">
-        <div ref={tiltRef} className="w-full mx-3 flex justify-center relative py-6  ">
-          <img
-            src="/imgBg.png"
-            className=" self-center size-[250px] sm:size-[350px] tilt-element rounded-md img-shadow "
-          />
-          <img
-            src="/profile.png"
-            className=" h-[270px] sm:h-[370px] rounded-md     absolute top-1 "
-          />
-        </div>
+      <div className="flex sm:flex-row flex-col  sm:px-16  items-center       sm:gap-12">
+        <img
+          ref={tiltRef}
+          src="/profile.png"
+          className=" w-[250px] sm:w-[300px] rounded-md      t "
+        />
 
         <div className="flex flex-col items-start gap-3 mx-3 sm:text-start text-center ">
           <p className=" dark:text-gray-300 text-gray-800 text-[15px] mt-10">
