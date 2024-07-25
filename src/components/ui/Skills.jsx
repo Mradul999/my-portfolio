@@ -8,6 +8,7 @@ import { SiCoronarenderer } from "react-icons/si";
 import { IoMdGitBranch } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
 
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -16,6 +17,7 @@ import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoVercel } from "react-icons/io5";
 
 export default function Skills() {
   const [isVisible1, setIsVisible1] = useState(true);
@@ -131,6 +133,11 @@ export default function Skills() {
                     <SiCoronarenderer className="font-bold text-indigo-700 text-2xl" />{" "}
                     <span className="font-medium text-[14px]">Render</span>
                   </li>
+                  <li className=" border-b-[4px] border-indigo-700 flex justify-between pb-2">
+                    {" "}
+                    <IoLogoVercel className="font-bold text-indigo-700 text-2xl" />{" "}
+                    <span className="font-medium text-[14px]">Vercel</span>
+                  </li>
                 </ul>
               
             </div>
@@ -179,6 +186,11 @@ export default function Skills() {
                   {" "}
                   <SiMongodb className="font-bold text-indigo-700 text-2xl" />{" "}
                   <span className="font-medium text-[14px]">MongoDB</span>
+                </li>
+                <li className=" border-b-[4px] border-indigo-700 flex justify-between pb-2">
+                  {" "}
+                  <IoLogoFirebase className="font-bold text-indigo-700 text-2xl" />{" "}
+                  <span className="font-medium text-[14px]">Firebase</span>
                 </li>
               </ul>
            

@@ -4,7 +4,7 @@ export const projectData = [
     projectLink:"https://yourchillflix.netlify.app",
     title: "Chillflix",
     description:
-      "Movies  website which allow users to play movies trailer,see ratings,cast   movies,search movies. It is build using ReactJs,Firebase,Tailwind CSS",
+      "Movie  website which allow users to play movies trailer,see ratings,cast  and search movies. It is build using ReactJs,Firebase,Tailwind CSS",
   },
   {
     image: "/nextblogs.png",
@@ -16,6 +16,7 @@ export const projectData = [
   {
     image: "/portfolio.png",
     title: "Portfolio",
+    projectLink:"https://mradul-verma.vercel.app",
     description:
       "My Personal Portfolio Website made using React.js ,TailwindCSS and shadcn  ",
   },
