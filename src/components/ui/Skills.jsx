@@ -44,8 +44,8 @@ export default function Skills() {
         <span className="text-center text-[12px] text-gray-800 dark:text-gray-300">
           My Technical Skills
         </span>
-        <div className="flex px-4 sm:px-24 sm:flex-row flex-col gap-10  justify-between text-gray-800 dark:text-white w-full mt-7">
-          <div className="flex flex-col gap-10">
+        <div className="flex px-4 sm:px-24 sm:flex-row flex-col gap-10 items-start  justify-between text-gray-800 dark:text-white w-full mt-7">
+          <div className="flex flex-col items-start gap-10">
             <div className="flex flex-col  items-center">
               <div
                 onClick={handleIsVisible1}
@@ -91,7 +91,7 @@ export default function Skills() {
             <div className="flex flex-col  items-center">
               <div
                 onClick={handleIsVisible2}
-                className="flex  justify-between items-center  w-full cursor-pointer"
+                className="flex  gap-20 items-center  w-full cursor-pointer"
               >
                 <div className="flex  items-center  gap-2">
                   <FaTools className="font-bold text-2xl text-indigo-600" />
