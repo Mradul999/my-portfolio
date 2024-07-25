@@ -59,7 +59,7 @@ export default function Home() {
           <h1 className="text-xl font-medium typing">I am a Web Developer</h1>
           <span className="py-2 px-1 flex items-center gap-1 font-medium text-[13px]  dark:text-white text-white hover:bg-indigo-800 transition-all rounded-md w-[45%] cursor-pointer justify-center mt-3 bg-indigo-600">
             {" "}
-            <a className="flex gap-2 items-center" href="#contactme">
+            <a className="flex gap-1 items-center" href="#contactme">
               Contact Me <IoSend className="text-[12px]" />
             </a>
           </span>

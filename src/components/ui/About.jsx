@@ -30,7 +30,7 @@ export default function About() {
       </div>
 
       <div className="flex sm:flex-row flex-col justify-between    sm:gap-12">
-        <img ref={tiltRef} src="/image.jpg" className="w-[320px] self-center tilt-element rounded-md img-shadow " />
+        <img ref={tiltRef} src="/image.jpg" className="sm:w-[320px] w-[250px] self-center tilt-element rounded-md img-shadow " />
         <div className="flex flex-col items-start gap-3 mx-3 sm:text-start text-center ">
           <p className=" dark:text-gray-300 text-gray-800 text-[15px] mt-10">
             Hey there, I am Mradul a 21-year-old student who is currently
