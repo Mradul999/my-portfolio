@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div
       id="home"
-      className=" pr-20 text-white  sm:pt-[9rem] pb-[8rem] sm:pb-[12rem] flex sm:flex-row flex-col justify-between px-5 sm:px-20 sm:gap-0 gap-4  "
+      className=" pr-20 text-white pt-[3rem]  sm:pt-[9rem] pb-[8rem] sm:pb-[12rem] flex sm:flex-row flex-col justify-between px-5 sm:px-20 sm:gap-0 gap-4  "
     >
       <div className="flex w-full gap-5  justify-between pr-36">
         <ul className="flex flex-col gap-3 text-[20px]  text-indigo-700 font-semibold mt-[3rem] sm:mt-[6.7rem]">
@@ -68,9 +68,9 @@ export default function Home() {
 
       <div ref={tiltRef} className="tilt-element ">
         <svg
-          className=""
-          width="300"
-          height="300"
+          className="sm:size-[300px] size-[270px]"
+          
+          
           viewBox="0 0 200 187"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"

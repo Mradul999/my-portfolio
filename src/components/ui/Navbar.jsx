@@ -19,11 +19,12 @@ export default function Navbar() {
   };
 
   const handleDropdown = () => {
+    
     setDropdown(!dropdown);
   };
   return (
     <div className="flex flex-col">
-      <div className=" flex  justify-between         py-4 text-[14px] font-medium mx-2  z-10 dark:bg-background-dark bg-background ">
+      <div className=" flex justify-between  sm:justify-around w-full  fixed top-0 right-0           py-4 text-[14px] font-medium px-2  z-10 dark:bg-background-dark bg-background ">
         <div className="text-gray-800 dark:text-white  cursor-pointer  hover:text-indigo-700    transition-all">
           Mradul
         </div>
@@ -47,7 +48,7 @@ export default function Navbar() {
             <a href="#contactme">Contact me</a>
           </li>
         </ul>
-      {theme === "dark" ? (
+        {theme === "dark" ? (
           <CiSun
             onClick={modeClickhandler}
             className=" text-white text-2xl cursor-pointer  sm:block hidden   "
@@ -80,8 +81,8 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`dark:text-white text-gray-800 bg-indigo-500 p-2 transition-all duration-300 ${
-          dropdown ? " opacity-100 max-h-full" : "opacity-0 max-h-0"
+        className={`dark:text-white text-gray-800 bg-indigo-500 sm:mt-0 mt-14 fixed w-full z-10  p-2 transition-all duration-300 origin-top ${
+          dropdown ? " scale-y-100  max-h-full" : "scale-y-0 max-h-0"
         } `}
       >
         {" "}
